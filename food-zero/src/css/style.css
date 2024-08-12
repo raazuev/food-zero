@@ -1,0 +1,51 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #233000;
+}
+
+.wrapper_grid {
+  max-width: 1644px;
+  min-height: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2762px 1434px;
+      grid-template-rows: 2762px 1434px;
+}
+
+.wrapper_grid .header .header_nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (82px)[12];
+      grid-template-columns: repeat(12, 82px);
+  grid-column-gap: 60px;
+  -ms-grid-rows: 208px;
+      grid-template-rows: 208px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper_grid .header .header_nav .menu_logo {
+  grid-column: 1 / 6 span;
+}
+
+.wrapper_grid .header .header_nav .menu_phone {
+  grid-column: 9 / 2 span;
+}
+
+.wrapper_grid .header .header_nav .menu_btn {
+  grid-column: 11 / 2 span;
+}
+/*# sourceMappingURL=style.css.map */

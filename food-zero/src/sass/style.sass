@@ -1,0 +1,65 @@
+*, *::after, *::before
+    box-sizing: border-box
+    margin: 0
+a
+    text-decoration: none
+body
+    background-color: #233000
+.wrapper_grid
+    max-width: 1644px
+    min-height: 100%
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 1fr
+    grid-template-rows: min(2762px) min(1434px)
+    .header
+        .header_nav
+            display: grid
+            grid-template-columns: repeat(12, 82px)
+            grid-column-gap: 60px
+            grid-template-rows: min(208px)
+            align-items: center
+            .menu_logo
+                grid-column: 1 / 6 span
+            .menu_phone
+                grid-column: 9 / 2 span
+            .menu_btn
+                grid-column: 11 / 2 span
+
+
+
+
+// .container
+// 	min-height: 100%
+// 	max-width: 1644px
+// 	margin: 0 auto
+// .header
+//     background-color: #233000
+//     width: 100%
+//     background-size: cover
+//     background-position: center
+//     .menu_content
+//         display: grid
+//         grid-template-columns: repeat(12, 82px)
+//         grid-template-rows: 208px
+//         gap: 60px
+//         align-items: center
+//         .menu_logo
+//             grid-column: 1 / 3 span
+//             grid-row: 1
+//         .menu_phone
+//             grid-column: 9 / 3 span
+//             grid-row: 1
+//         .menu_btn
+//             grid-column: 11 / 2 span
+//             grid-row: 1
+// @media (max-width: 1300px)
+//     .menu_content
+//         display: grid
+//         .menu_logo
+//             display: grid
+//             grid-column: 4 / 12
+//             img
+//                 width: 150px
+
+    
